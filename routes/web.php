@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    // return view('welcome');
+    return view('welcome');
 
     //fetching all users
-    $users = DB::select("select * from users");
+    //$users = DB::select("select * from users");
 
 
     //creating new users
@@ -33,7 +33,7 @@ Route::get('/', function () {
     //deleting
     //$users = DB::delete('delete from users where id=2');
 
-    dd($users);
+    //dd($users);
 });
 
 Route::get('/dashboard', function () {
